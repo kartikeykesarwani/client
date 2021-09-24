@@ -57,12 +57,14 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className='form-group'>
           <select name='status' value={status} onChange={(e) => onChange(e)}>
             <option value='0'>* Select Professional Status</option>
-            <option value='Developer'>Developer</option>
-            <option value='Junior Developer'>Junior Developer</option>
-            <option value='Senior Developer'>Senior Developer</option>
-            <option value='Manager'>Manager</option>
-            <option value='Student or Learning'>Student or Learning</option>
-            <option value='Instructor'>Instructor or Teacher</option>
+            <option value='Automation Engineer'>Automation Engineer</option>
+            <option value='AI/ML Engineer'>AI/ML Engineer</option>
+            <option value='Cloud Engineer'>Cloud Engineer</option>
+            <option value='Frontend Engineer'>Frontend Engineer</option>
+            <option value='Backend Engineer'>Backend Engineer</option>
+            <option value='Full Stack Engineer'>Full Stack Engineer</option>
+            <option value='Android Engineer'>Android Engineer</option>
+            <option value='Web Designer'>Web Designer</option>
             <option value='Intern'>Intern</option>
             <option value='Other'>Other</option>
           </select>
@@ -115,7 +117,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={(e) => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Please use comma separated values (eg. AWS,Devops,JAVA,etc)
           </small>
         </div>
         <div className='form-group'>

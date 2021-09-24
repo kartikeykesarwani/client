@@ -14,8 +14,10 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className='large text-primary'>Posts</h1>
-      <p className='lead'>Welcome to the community</p>
+      <h1 className='large text-primary'>Jobs</h1>
+      <p className='lead'>
+        You can post about latest Softare engineering jobs here.
+      </p>
       <PostForm />
       <div className='posts'>
         {posts.map((post) => (

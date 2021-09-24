@@ -22,7 +22,7 @@ const PostForm = ({ addPost }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Enter Job Description'
           value={text}
           onChange={(e) => setText(e.target.value)}
           required></textarea>

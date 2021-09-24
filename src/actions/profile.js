@@ -35,7 +35,6 @@ export const getCurrentProfile = () => async (dispatch) => {
 
 //Get all profiles
 export const getProfiles = () => async (dispatch) => {
-  dispatch({ type: CLEAR_PROFILE });
   try {
     const res = await axios.get(
       'https://blooming-citadel-59420.herokuapp.com/api/profile'
@@ -272,7 +271,9 @@ export const deleteEducation = (id) => async (dispatch) => {
 export const deleteAccount = (id) => async (dispatch) => {
   if (window.confirm('Are you sure ? This can NOT be undone!')) {
     try {
-      await axios.delete('/api/profile');
+      await axios.delete(
+        'https://blooming-citadel-59420.herokuapp.com/api/profile'
+      );
 
       dispatch({
         type: CLEAR_PROFILE,

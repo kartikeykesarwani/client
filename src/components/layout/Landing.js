@@ -12,9 +12,9 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>DevPark</h1>
+          <h1 className='x-large'>SWE.</h1>
           <p className='lead'>
-            A central place for developers from all around the globe!
+            A central place for Software Engineers from all around the globe!
           </p>
           <div className='buttons'>
             <Link to='register' className='btn btn-primary'>
